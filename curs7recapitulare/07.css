@@ -1,0 +1,116 @@
+        body {
+            font-family: "dancing script", cursive;
+            font-size: 15px;
+        }
+
+        nav {
+            display: inline;
+            background-color: grey;
+            height: 36px;
+        }
+
+        nav>ul {
+            margin: 0;
+            padding: 0;
+            height: 30px;
+            background-color: grey;
+        }
+
+        nav>ul>li {
+            display: inline;
+            float: left;
+            padding: 7px 5px 10px 5px;
+        }
+
+        nav>ul>li:hover {
+            background-color: red;
+        }
+
+        nav>ul>li.active {
+            background-color: red;
+        }
+
+        nav>ul>li.active>a {
+            color: beige;
+            text-decoration: none;
+            list-style: none;
+            padding: 15px 20px;
+
+        }
+
+        /*------------SUBMENIU-------------*/
+        ul.submeniu {
+            text-transform: uppercase;
+            display: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav>ul>li:hover>ul.submeniu {
+            display: block;
+            background-color: gray;
+            clear: both;
+            margin-top: 10px;
+            position: absolute;
+            z-index: 11111;
+            width: 160px;
+
+        }
+
+        ul.submeniu>li>a {
+            padding: 15px 20 px;
+            text-decoration: none;
+        }
+
+        ul.submeniu>li:hover {
+            background-color: red;
+            color: black;
+        }
+
+        nav>ul>li:hover>ul.submeniu>li {
+            padding: 7px 5 px 7px 5px;
+        }
+
+        main {
+            z-index: 2323232334;
+            position: relative;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 60% 10%;
+            padding: 10px;
+            border-color: aqua;
+        }
+
+        .grid-container>div {
+            background-color: aqua;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item1 {}
+
+
+
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        tbody td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        tbody tr:nth-child(2n-1) td {
+            background-color: pink;
+            color: black;
+        }
+
+        
